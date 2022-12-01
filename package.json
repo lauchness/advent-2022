@@ -3,17 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
+    "solutions/*",
     "packages/*"
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "solve": "turbo run solve --parallel"
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
     "prettier": "latest",
     "turbo": "latest"
   },
